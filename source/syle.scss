@@ -1,1 +1,32 @@
-@import 'zerostyle.scss';
+@import "zerostyle.scss";
+.container {
+  background: linear-gradient(to bottom right, #00cffa, #ff0038);
+  height: 100%;
+}
+.calculator {
+  background: #138d90;
+  border: 3px solid #061283;
+  border-radius: 5%;
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+#check {
+}
+#guests {
+}
+#quality {
+}
+#btn {
+}
+#tip-amaunt {
+}

@@ -69,3 +69,29 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+.container {
+  background: -webkit-gradient(linear, left top, right bottom, from(#00cffa), to(#ff0038));
+  background: linear-gradient(to bottom right, #00cffa, #ff0038);
+  height: 100%;
+}
+
+.calculator {
+  background: #138d90;
+  border: 3px solid #061283;
+  border-radius: 5%;
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
