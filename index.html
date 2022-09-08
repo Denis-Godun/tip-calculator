@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fontawesome.com/icons/coin?s=duotone&f=classic">
+
     <link rel="stylesheet" href="style.css" />
     <title>Калькулятор чаевых</title>
   </head>
@@ -12,26 +12,29 @@
     <div class="container">
       <div class="calculator">
         <h1 class="title">Калькулятор чаевых</h1>
-        <label for="check">Сумма счёта</label>
-        <br>
-        <button><i class="fa-duotone fa-coin"></i></button>
-        <input type="number" id="check" />
-        <br>
-        <label for="guests">Посетители</label>
-        <br>
-        <input type="number" id="guests"/>
-        <br>
-        <label for="quality">Качество обслуживания</label>
-        <br>
+        <div id="label">
+          <label id="label" for="check">Сумма счёта</label>
+          <label id="label" for="guests">Посетители</label>
+        </div>
+        <br />
+        <div id="numbers">
+          <input type="number" id="check" />
+
+          <input type="number" id="guests" />
+        </div>
+
+        <br />
+        <label id="label" for="quality">Качество обслуживания</label>
+        <br />
         <select id="quality">
           <option disabled selected value="0">Выбрать...</option>
-          <option value="0.3" >30% - Выдающееся</option>
+          <option value="0.3">30% - Выдающееся</option>
           <option value="0.2">20% - Хорошо</option>
           <option value="0.15">15% - Неплохо</option>
           <option value="0.1">10% - Плохо</option>
           <option value="0.05">5% - Ужасно</option>
         </select>
-        <br>
+        <br />
         <button onclick="calculate()" id="btn">Посчитать чаевые</button>
       </div>
       <div id="tip-amaunt"></div>
